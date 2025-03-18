@@ -96,6 +96,7 @@ Now it's time for manual cleanup:
 
  - split role titles, e.g. "Managing Director / Visionary Creator"
  - ensure proper cAsE in titles, groups, etc.
+ - Protip for group (title case) checking: regex-search repeatedly for `\r\n\r\n^.*$\r\n\r\n`—though this skips the first one if there's no empty line above.
  - handle silly stuff like '🍩 Arjeta Avllaj ☕'
  - Delete the accidental 'join our team' group, obviously
  - Maybe also manually add the copyright info from below the footer
@@ -361,3 +362,11 @@ The clean screenshots look like:
 
 ![tribalcred1](https://github.com/user-attachments/assets/4711ea54-b7ce-4b0d-a2a2-fb7024cfcd4a)
 ![tribalcred2](https://github.com/user-attachments/assets/1a220c99-a1b0-4af4-9432-1629acf230f2)
+
+# Post-cleanup matching
+
+Only two changes were added through matching:
+
+![changes](https://github.com/user-attachments/assets/a8822cd9-bb9c-4da9-8cc9-4f9f6770e3e0)
+
+Here compared on text-compare.com
