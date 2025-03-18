@@ -21,11 +21,11 @@ const nth = (d) => {
   }
 };
 
-const fortnightAway = new Date(+new Date + 12096e5);
-const date = fortnightAway.getDate();
-const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][fortnightAway.getMonth()];
+const todaysdate = new Date(+new Date);
+const date = todaysdate.getDate();
+const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][todaysdate.getMonth()];
 
-today = `${month} ${date}${nth(date)}, ${fortnightAway.getFullYear()}`;
+today = `${month} ${date}${nth(date)}, ${todaysdate.getFullYear()}`;
 
 // Dates Suck End
 // Inject jQuery Start even though might be not necessary
@@ -118,7 +118,7 @@ The non-cleaned up results look like this:
 ## Page 1 output
 
 ```
-Development team: Current team (website credits April 1st, 2025)
+Development team: Current team (website credits March 18th, 2025)
 
 Backend Development
 🍩 Arjeta Avllaj ☕
@@ -150,7 +150,7 @@ Thomas Cartwright
 Product Management
 Thorsten Schankin
 
-Development team: Past contributors (website credits April 1st, 2025)
+Development team: Past contributors (website credits March 18th, 2025)
 
 Designer
 Alexander Arndt
@@ -238,7 +238,7 @@ Matthias Klein
 Raimund Schlichtiger
 Wolf Dieter Rieck
 
-Development team: Community Managers (website credits April 1st, 2025)
+Development team: Community Managers (website credits March 18th, 2025)
 
 Arabic
 Alaa
@@ -320,7 +320,7 @@ See how you have to fix case and split "Managing Director / Visionary Creator"?
 ## Page 2 output
 
 ```
-Support team: Team leaders (website credits April 1st, 2025)
+Support team: Team leaders (website credits March 18th, 2025)
 
 Community Manager
 mellofax
@@ -329,7 +329,7 @@ Nova
 Community Manager (TH)
 toon
 
-Support team: Team members (website credits April 1st, 2025)
+Support team: Team members (website credits March 18th, 2025)
 
 Senior In-Game Supporter & Speed Admin
 Basand
@@ -348,7 +348,7 @@ Zord Gaf
 Senior In-Game Supporter & Script Admin
 RedAlert
 
-Support team: Join our team (website credits April 1st, 2025)
+Support team: Join our team (website credits March 18th, 2025)
 ```
 
 - I guess "HP Admin" is "Homepage Admin" but WTF is a "Speed Admin"?
